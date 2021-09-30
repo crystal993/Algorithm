@@ -8,6 +8,7 @@ sum = 0
 
 # 시작인덱스, 마지막인덱스 전체크기의 절반 이어야 한다.
 sidx = fidx = hlen = int(n/2)
+print(hlen)
 
 for i in range(n):
     for j in range(sidx, fidx+1):
