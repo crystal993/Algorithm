@@ -6,6 +6,14 @@ n_data = [list(map(int, input().split())) for _ in range(n)]
 rotate = int(input())
 r_data = [list(map(int, input().split())) for _ in range(rotate)]
 
+# 3  -> rotate
+# 2 0 3
+# 5 1 2
+# 3 1 4
+# r_date[i][0] -> n_data 몇번째 줄이냐 =>  n_data[r_data[i][0]-1][]
+# r_date[i][1] -> 왼쪽 0 오른쪽 1 방향 판단
+# r_date[i][2] -> 이동 횟수  
+
 # 1단계 : 회전 실행하는 갯수만큼 for문 돌림.
 for i in range(rotate):
     for j in range(r_data[i][2]):
@@ -21,6 +29,7 @@ for i in range(rotate):
             n_data[r_data[i][0]-1].insert(0, tmp)
             # n_data[r_data[i][0] - 1]
 
+# 2단계 : 모래시계
 # print(n_data)
 sum = 0
 hlen = int(n/2)
