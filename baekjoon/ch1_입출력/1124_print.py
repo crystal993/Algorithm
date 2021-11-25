@@ -1,0 +1,8 @@
+n1 = int(input())
+m1 = int(input())
+n2 = list(str(n1))
+m2 = list(str(m1))
+print(n1*int(m2[2]))
+print(n1*int(m2[1]))
+print(n1*int(m2[0]))
+print(n1*m1)
