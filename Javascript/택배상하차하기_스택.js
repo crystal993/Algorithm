@@ -15,4 +15,5 @@ while (재고들.length) {
         break;
     }
 }
-console.log(택배차)
+console.log(택배차) //'아이패드', '햇반', '생수', '피아노'
+//선입 후출 
