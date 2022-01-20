@@ -6,15 +6,16 @@
 from collections import deque
 
 n = int(input())
-dq = deque()
-
-for i in range(1,n+1):
-    dq.append(i)
+# dq = deque()
+#
+# for i in range(1,n+1):
+#     dq.append(i)
+dq = deque(range(1,n+1)) #위에 주석처리한 부분과 같음.
 
 while len(dq) > 1 :
-    dq.popleft()
-    next = dq.popleft()
-    dq.append(next)
+    dq.popleft() #큐의 맨 처음거 버림 
+    next = dq.popleft() #큐의 그 다음거 저장
+    dq.append(next) #큐 맨뒤로 옮김
 
 print(dq[0])
 
