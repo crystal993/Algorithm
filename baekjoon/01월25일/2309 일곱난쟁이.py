@@ -3,7 +3,6 @@ tot = sum(heights)
 
 for i in range(8):
     for j in range(i+1, 9):
-        print(i," ",j)
         if tot - heights[i] - heights[j] == 100:
             heights.remove(heights[i])
             heights.remove(heights[j])
